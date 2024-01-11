@@ -1,0 +1,31 @@
+.container {
+  font-size: 28px;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 20px;
+  width: 1200px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+  width: 500px;
+}
+
+.wiki-link {
+  margin: 50px 0;
+}
+
+.link {
+  text-decoration: none;
+  color: darkgreen;
+}

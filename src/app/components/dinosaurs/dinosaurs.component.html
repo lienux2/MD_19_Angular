@@ -1,0 +1,12 @@
+<app-add-dinosaur (onAddDino)="addDino($event)"></app-add-dinosaur>
+<section class="dinos">
+  <div class="card">
+    <app-dinosaur-item
+      class="card-details"
+      *ngFor="let dino of dinos"
+      [dino]="dino"
+      (click)="onDeleteDino(dino)"
+      (click)="onToggleEditDino()"
+    ></app-dinosaur-item>
+  </div>
+</section>

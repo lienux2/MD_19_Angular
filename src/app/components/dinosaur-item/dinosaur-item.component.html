@@ -1,0 +1,27 @@
+<div>
+  <img
+    class="image"
+    [src]="dino.photo"
+    alt="Exterior photo of {{ dino.name }}"
+  />
+</div>
+<div>
+  <h1 class="dino-name">{{ dino.name }}</h1>
+</div>
+<div class="learn">
+  <a class="learn-more" [routerLink]="['/dinosaur', dino.id]">Learn More</a>
+</div>
+<div class="button-wrapper">
+  <app-button
+    backgroundColor="cornflowerblue"
+    color="antiquewhite"
+    text="Amend"
+    (btnClick)="toggleEditDino()"
+  ></app-button>
+  <app-button
+    backgroundColor="crimson"
+    color="antiquewhite"
+    text="Exterminate"
+    (btnClick)="onDelete(dino)"
+  ></app-button>
+</div>

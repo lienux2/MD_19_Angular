@@ -1,0 +1,23 @@
+.image {
+  width: 520px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.dino-name {
+  margin: 20px;
+  font-size: 30px;
+}
+
+.learn-more {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: purple;
+}
+
+.learn {
+  margin: 20px 0;
+}

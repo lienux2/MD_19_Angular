@@ -1,0 +1,24 @@
+<header>
+  <nav>
+    <div class="logo-position">
+      <a [routerLink]="['']">
+        <img
+          class="logo"
+          src="/assets/logo.png"
+          alt="logo"
+          aria-hidden="true"
+        />
+      </a>
+    </div>
+    <div class="navigation-position">
+      <a [routerLink]="['']">Dino Hub</a>
+      <a [routerLink]="['/about']">Jurassic Insights</a>
+      <app-button
+        backgroundColor="{{ showAddDino ? 'purple' : 'darkgreen' }}"
+        color="{{ showAddDino ? 'black' : 'white' }}"
+        text="{{ showAddDino ? 'Close' : 'Hatch Dino' }} "
+        (btnClick)="toggleAddDino()"
+      ></app-button>
+    </div>
+  </nav>
+</header>

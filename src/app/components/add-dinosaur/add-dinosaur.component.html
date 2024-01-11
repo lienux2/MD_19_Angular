@@ -1,0 +1,89 @@
+<section *ngIf="showAddDino">
+  <div>
+    <div class="content">
+      <form (ngSubmit)="onSubmit()" class="form">
+        <h1 class="title">Hatch New Dinosaur</h1>
+        <div class="form-control">
+          <div class="form-items">
+            <label class="label" for="name"
+              >Name: <span class="dynamic-form">{{ name }}</span></label
+            >
+            <input
+              class="input"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Name..."
+              [(ngModel)]="name"
+            />
+            <div *ngIf="!name" class="form-error">Name is required</div>
+          </div>
+
+          <div class="form-items">
+            <label class="label" for="size"
+              >Size: <span class="dynamic-form">{{ size }}</span></label
+            >
+            <input
+              class="input"
+              id="size"
+              name="size"
+              type="text"
+              placeholder="How tall or long?"
+              [(ngModel)]="size"
+            />
+            <div *ngIf="!size" class="form-error">Size is required</div>
+          </div>
+
+          <div class="form-items">
+            <label class="label" for="period"
+              >Period: <span class="dynamic-form">{{ period }}</span></label
+            >
+            <input
+              class="input"
+              id="period"
+              name="period"
+              type="text"
+              placeholder="In what period it lived?"
+              [(ngModel)]="period"
+            />
+            <div *ngIf="!period" class="form-error">Period is required</div>
+          </div>
+
+          <div class="form-items">
+            <label class="label" for="diet"
+              >Diet: <span class="dynamic-form">{{ diet }}</span></label
+            >
+            <input
+              class="input"
+              name="diet"
+              id="diet"
+              type="text"
+              placeholder="What does he eat?"
+              [(ngModel)]="diet"
+            />
+            <div *ngIf="!diet" class="form-error">Diet is required</div>
+          </div>
+
+          <div class="form-items">
+            <label class="label" for="photo"
+              >Photo: <span class="dynamic-form">{{ photo }}</span></label
+            >
+            <input
+              class="input"
+              name="photo"
+              id="photo"
+              type="text"
+              placeholder="Link for photo..."
+              [(ngModel)]="photo"
+            />
+            <div *ngIf="!photo" class="form-error">Photo is required</div>
+          </div>
+
+          <div class="button-wrapper">
+            <button class="button hatch-button" type="submit">Hatch</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<section class="container" *ngIf="dino">
+  <div class="content">
+    <div>
+      <img
+        class="image"
+        [src]="dino.photo"
+        alt="Exterior photo of {{ dino.name }}"
+      />
+    </div>
+    <div>
+      <h1>Name: {{ dino.name }}</h1>
+      <h3>Diet: {{ dino.diet }}</h3>
+      <p>Lived in: {{ dino.period }} period</p>
+      <p>Size: {{ dino.size }}</p>
+    </div>
+  </div>
+  <div class="wiki-link">
+    <a
+      class="link"
+      href="https://en.wikipedia.org/wiki/{{ dino.name }}"
+      target="_blank"
+      >Click to learn more about {{ dino.name }}</a
+    >
+  </div>
+</section>
+
+<section class="container" *ngIf="!dino">
+  <div class="content">
+    <p>Could not retrieve dinosaur info!</p>
+  </div>
+</section>
