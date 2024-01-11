@@ -97,12 +97,12 @@
       "photo": "https://everydayoriginal.com/wp-content/uploads/2022/05/carnotaurus_final-scaled.jpg"
     },
     {
-      "id": 13,
-      "name": "Carnotaurus",
-      "size": "8m",
-      "period": "Late Cretaceous",
-      "diet": "Carnivorous",
-      "photo": "https://everydayoriginal.com/wp-content/uploads/2022/05/carnotaurus_final-scaled.jpg"
+      "name": "Archaeopteryx",
+      "size": "0.5m",
+      "period": "Late Jurassic",
+      "diet": "Omnivorous",
+      "photo": "https://a-z-animals.com/media/2022/06/Archaeopteryx-in-the-woods.jpg",
+      "id": 14
     }
   ]
 }
